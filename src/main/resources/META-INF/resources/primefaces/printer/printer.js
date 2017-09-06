@@ -32,6 +32,7 @@
             if ($("link[media=print]").length > 0)
             {
                 $("link[media=print]").each( function() {
+			doc.write("test");
                     doc.write("<link type='text/css' rel='stylesheet' href='" + $(this).attr("href") + "' media='print' />");
                 });
             }
